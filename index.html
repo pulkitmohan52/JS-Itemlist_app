@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shoppers Spot</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4">
+            <i class="fas fa-shopping-cart"></i>
+            My<span class="text-primary">Shopping</span>List
+        </h1>
+    </div>
+    <form id="item-form">
+        <div class="form-group ml-4 mr-4">
+            <label for="item-category">Item Category</label>
+            <input type="text" id="item-category" class="form-control">
+        </div>
+        <div class="form-group ml-4 mr-4">
+            <label for="item-name">Item Name</label>
+            <input type="text" id="item-name" class="form-control">
+        </div>
+        <div class="form-group ml-4 mr-4">
+            <label for="item-price">Item Price</label>
+            <input type="text" id="item-price" class="form-control">
+        </div>
+        <input type="submit" value="Add Item" class="btn btn-primary btn-block ml-4 mr-4">
+    </form>
+    <h1 class="mt-4 text-secondary">List Items</h1>
+    <table class="table table-hover mt-4">
+        <thead>
+            <tr>
+                <th>Item Category</th>
+                <th>Item Name</th>
+                <th>Item Pride</th>
+            </tr>
+        </thead>
+        <tbody id="item-list"></tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
